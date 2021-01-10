@@ -1,0 +1,12 @@
+# 查看字符集
+show variables like '%character%';
+show variables like 'collation_%';
+
+开启远程连接数据库服务：
+1.首先编辑文件/etc/mysql/mysql.conf.d/mysqld.cnf：''or''my.cnf
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+进入编辑页面，此时输入/bind    当出现bind-address    = 127.0.0.1时，按一下回车,此时按下键盘上的‘i’,当右下角出现:”--INSERT--”此时在bind-address    = 127.0.0.1 最前面输入#
+在my.cnf中加上:skip-name-resolve
+sql> : GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mengdairA6' WITH GRANT OPTION;
+service mysql restart
+

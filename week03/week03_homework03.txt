@@ -1,0 +1,7 @@
+SELECT DISTINCT player_id, player_name, count(*) as num    # 5 select 
+FROM player JOIN team ON player.team_id = team.team_id     # 1 from 
+WHERE height > 1.80                #2 where 
+GROUP BY player.team_id            #3 group by 
+HAVING num > 2                     #4 having
+ORDER BY num DESC                  #6 order by 
+LIMIT 2                            #7 limit
