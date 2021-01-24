@@ -1,0 +1,16 @@
+<html>
+<head>
+    <mate charset="utf-8">
+    <title>Bookslist</title>
+<head>
+<body>
+
+{% for book in n %}
+    <div>bookname: {{ book.name }} <br>
+        author: {{book.author}} <br>
+        start: {{book.starts}}
+    </div>
+
+{% endfor %}
+</body>
+</html>
