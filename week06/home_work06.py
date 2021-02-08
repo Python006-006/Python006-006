@@ -14,7 +14,7 @@ class Animal():
 
     @property
     def ls_fierce(self):
-        return True if self.type == '食肉' and (self.somatotype == '中' or self.somatotype == '大') and self.character == '性格凶猛' else False
+        return True if self.animal_type == '食肉' and (self.somatotype == '中等' or self.somatotype == '大型') and self.nature == '凶猛' else False
 
 
 class Cat(Animal):
