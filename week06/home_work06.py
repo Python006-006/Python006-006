@@ -4,8 +4,11 @@ class Animal():
     def __init__(self, animal_type, somatotype, nature):
         '''
         动物类要求定义“类型”、“体型”、“性格”、“是否属于凶猛动物”四个属性，是否属于凶猛动物的判断标准是：“体型 >= 中等”并且是“食肉类型”同时“性格凶猛”。
+        类型 ：食肉 、 食素、 杂食
+        体型 ：大型 、 中等、 小型
+        性格 ：温顺 、 中性、 凶猛
         '''
-        self.animal_type = type  
+        self.animal_type = animal_type  
         self.somatotype = somatotype
         self.nature = nature
 
